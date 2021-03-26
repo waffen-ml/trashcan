@@ -36,6 +36,10 @@ div.menu span.logo {
     cursor:normal;
     user-select: none;
 }
+div.menu a {
+    text-decoration: none;
+    color:black;
+}
 div.menu div.search {
     position:absolute;
     display:flex;
