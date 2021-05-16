@@ -1,7 +1,7 @@
 body {
     margin:0;
     height:100vh;
-    background-color:#dcffb7;
+    background-color:#fdfdfd;
 }
 
 input {
@@ -23,8 +23,7 @@ div.menu {
     margin-left:50%;
     transform:translate(-50%);
     box-sizing:border-box;
-    background:#c7fb8f;
-    border:solid 3px #68ca00;
+    background:white;
     border-top:none;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -92,9 +91,8 @@ div.item {
     display:flex;
     flex-direction: column;
     align-items:center;
-    box-shadow:0px 0px 4px 0px black;
-    border:solid 3px #cecece;
-    border-radius:25px;
+    box-shadow:0px 0px 5px 0px black;
+    border-radius:5px;
     box-sizing:border-box;
     overflow: hidden;
     transition:border-color 0.4s;
@@ -183,15 +181,12 @@ div.search-filter input[type="button"] {
 
 
 body::-webkit-scrollbar {
-    width:11px;
-    background:#68ca0067;
+    width:13px;
 }
 
 body::-webkit-scrollbar-thumb {
-    width:11px;
-    background:#77e700;
-    box-shadow:0px 0px 4px 3px #428000 inset;
-    border-radius:10px;
+    width:13px;
+    background:#cccccc;
 }
 
 /* Шрифт */

@@ -17,7 +17,7 @@ function Resize() {
     var NewResolution = document.body.clientWidth;
     var Koeff = NewResolution / Resolution;
     for(var a = 0; a < Images.length;a+=1) {
-        Images[a].style.width = OriginalWidth[a] * Koeff * 1.6 + "px";
+        Images[a].style.width = OriginalWidth[a] * Koeff * 1.2 + "px";
     }
 }
 
