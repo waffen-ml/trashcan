@@ -2,7 +2,6 @@ body {
     margin:0;
     padding:0;
     width:100%;
-    background: pink;
     overflow:hidden;
 }
 
@@ -63,6 +62,10 @@ body {
 
     display:flex;
     align-items: center;
+
+    transition:border-bottom-right-radius .4s;
+
+    z-index:5;
 }
 
 .qmenu ul {
@@ -87,7 +90,7 @@ ul.compacted {
     padding:10px 15px;
     height:auto;
     border-bottom-left-radius: 20px;
-    z-index:-1;
+
 }
 
 @keyframes sidebar-open {
@@ -148,4 +151,34 @@ ul.compacted li:not(:first-child) {
     background-size:100% 100%;
     background-position: center;
     visibility: hidden;
+}
+
+main {
+    padding:15px 27px;
+}
+
+
+.qheader {
+    font:bold 40px monospace;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.qtext {
+    font:normal 21px monospace;
+    margin: 0;
+}
+
+.paragraph {
+    margin-top:15px;
+    margin-bottom:20px;
+    text-indent: 23px;
+}
+
+.qcontent {
+    position:relative;
+    left:50%;
+    transform:translate(-50%);
+    width:100%;
+    max-width:1100px;
 }
