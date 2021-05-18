@@ -51,7 +51,7 @@ window.onresize = Update;
 
 //AUDIO
 
-let players = document.getElementsByTagName("audio");
+let players = document.getElementsByClassName("qaudio");
 
 for(var a = 0; a < players.length;a+=1) {
     players[a].onplay = function() {
