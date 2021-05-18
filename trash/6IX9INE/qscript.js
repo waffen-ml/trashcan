@@ -49,3 +49,15 @@ mbutton.addEventListener("click",function(ev) {
 Update();
 window.onresize = Update;
 
+//AUDIO
+
+let players = document.getElementsByTagName("audio");
+
+for(var a = 0; a < players.length;a+=1) {
+    players[a].onplay = function() {
+        for(var b = 0; b < players.length;b+=1) {
+            if(players[b] == this) continue;
+            players[b].pause();
+        }
+    };
+}
