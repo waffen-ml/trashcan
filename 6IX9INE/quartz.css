@@ -178,6 +178,10 @@ main {
     margin-bottom:10px;
 }
 
+.qheader.little {
+    font-size:35px;
+}
+
 .qtext {
     font:normal 21px monospace;
     margin: 0;
@@ -256,6 +260,9 @@ main {
         text-align:center;
     }
     .tracks {
+        justify-content: center;
+    }
+    .qimagecollection {
         justify-content: center;
     }
 }
@@ -354,4 +361,60 @@ footer img {
     flex-wrap:wrap;
     gap:15px;
     max-width:100%;
+}
+
+.concerts-holder {
+    margin-top:20px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.concerts-holder .qblock {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:350px;
+    max-width: 100%;
+    height:auto;
+}
+
+.concerts-holder .qheader {
+    font-weight: normal;
+    font-size:33px;
+    text-align:center;
+    margin-top:5px;
+    cursor:default;
+    user-select: none;
+    margin-bottom:0;
+}
+
+.concerts-holder a {
+    width:94%;
+    height:300px;
+    border-radius: inherit;
+    margin-top:7px;
+    margin-bottom:13px;
+}
+
+.concerts-holder .qimage {
+    margin:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+@media(min-width:841px ) and (max-width:853px) {
+    .concerts-holder {
+        gap:10px;
+    }
+}
+
+@media (min-width:463px) and (max-width:839px) {
+    .concerts-holder .qblock {
+        width:100%;
+    }
 }
